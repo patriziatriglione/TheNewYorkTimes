@@ -4,12 +4,10 @@ import "./../home/home.css"
 import { Link } from "react-router-dom";
 import { Nav, NavItem} from "reactstrap";
 
-
-
-
 export default function NavCategory() {
  const mode=useSelector((state) => state.newTheme);
 const {isNewTheme} = mode;
+
  return (
         <div className="mobile">
      <Nav justified className="border-bottom py-3">

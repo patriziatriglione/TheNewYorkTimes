@@ -9,6 +9,7 @@ export default function ArticleComponent({ articles }) {
   // state to change color
   const mode = useSelector((state) => state.newTheme);
   const { isNewTheme } = mode;
+
 return (
   <Container>
       {Array.isArray(articles ) && articles.map((article, index) => (
@@ -46,5 +47,5 @@ return (
         </Row>
       ))}
     </Container>
-);
-            }
+    );
+   }

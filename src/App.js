@@ -11,8 +11,8 @@ import Footer from "./pages/footer/Footer";
 
 
 function App() {
- 
-    const Layout = () => {
+  const Layout = () => {
+
       return (
         <>
   <Header />
@@ -21,6 +21,7 @@ function App() {
   </>
       );
     }
+    
     return (
       <>
       <BrowserRouter>

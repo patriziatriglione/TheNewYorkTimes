@@ -12,15 +12,12 @@ export default function Search() {
   const [searchQuery, setSearchQuery] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   // function that sends the request based on the query and leads to the page with the results
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(fetchDataSearch(searchQuery));
     navigate(`/search-results?query=${encodeURIComponent(searchQuery)}`);
     setSearchQuery("")
-
-    
   };
 
   return (

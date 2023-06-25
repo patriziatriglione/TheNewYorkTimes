@@ -8,14 +8,11 @@ import "./home/home.css";
 export default function Login() {
   const mode = useSelector((state) => state.newTheme);
   const { isNewTheme } = mode;
-  
   const [showModal, setShowModal] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowModal(true);
   };
-
   const closeModal = () => {
     setShowModal(false);
   };

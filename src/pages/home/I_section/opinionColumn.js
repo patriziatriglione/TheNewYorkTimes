@@ -7,6 +7,7 @@ import ColumnFourArticles from "../components/titleColumn";
 import Error from "../../Error";
 import Loading from "../../Loading";
 
+// Opinion Section
 export default function OpinionSection() {
   const [isLoading, setIsLoading] = useState(true)
   const [opinion, setOpinion] = useState("");
@@ -31,6 +32,7 @@ export default function OpinionSection() {
   useEffect(() => {
     OpinionData(); 
   },);
+
  return (
     <Container>
          {isLoading ? (
@@ -48,14 +50,12 @@ export default function OpinionSection() {
             secondArticle={opinion[9]}
             thirdArticle={opinion[10]}
             fourthArticle={opinion[11]} />
-           
             </>
           ) : (
             error && <Error />
           )}
         </>
       )}
-          </Container>
-
-    );
-}
+      </Container>
+      );
+    }

@@ -93,8 +93,6 @@ export default function MenuFooter() {
       </Link>
   </NavItem>
   </Nav>
-
-      </Container>    
-           
-    );
+  </Container>
+  );
 }

@@ -14,7 +14,7 @@ export default function SearchResults() {
     <div>
       {isLoading ? (
         <Loading />
-      ) : (
+        ) : (
         <>
           {articlesSearch.length > 0 ? (
             <SearchComponents articlesSearch={articlesSearch} />
@@ -25,4 +25,4 @@ export default function SearchResults() {
       )}
     </div>
   );
-          }
+ }

@@ -3,14 +3,13 @@ import {useSelector} from "react-redux";
 import {Row, Container, Col} from "reactstrap";
 import "./../home.css"
 
+// structure for the five news in a row
 export default function LittleNews({articles}) {
-     
-      const mode=useSelector((state) => state.newTheme);
-      const {isNewTheme} = mode;
-    
-    const listNews= articles.slice(0, 5);
-    
-     return (
+  const mode=useSelector((state) => state.newTheme);
+  const {isNewTheme} = mode;
+  const listNews= articles.slice(0, 5);
+  
+  return (
     <Container>
             <Row className="my-3 border-bottom">
               {listNews.map((article, index) => (

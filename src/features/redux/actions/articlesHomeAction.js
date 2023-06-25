@@ -11,14 +11,12 @@ export const getArticlesHomeRequest= () => {
        type: GET_ARTICLES_HOME_REQUEST,
     };
  };
-
  export const getArticlesHomeSuccess = (articles) => {
     return {
        type: GET_ARTICLES_HOME_SUCCESS,
        payload: articles,
     };
  };
-
  export const getArticlesHomeFailure = (errorMessage) => {
     return {
        type: GET_ARTICLES_HOME_FAILURE,

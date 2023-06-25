@@ -13,14 +13,12 @@ export const getArticlesRequestSent = () => {
     type: SEARCH_ARTICLES_REQUEST,
   };
 };
-
 export const getArticlesSuccess = (articles) => {
   return {
     type: SEARCH_ARTICLES_SUCCESS,
     payload: articles,
   };
 };
-
 export const getArticlesFailure = (errorMessage) => {
   return {
     type: SEARCH_ARTICLES_FAILURE,
@@ -42,8 +40,6 @@ export const fetchDataSearch = (searchQuery) => {
       const errorMessage = error.message;
       dispatch(getArticlesFailure(errorMessage));
    }
-   
-    
   };
 };
 

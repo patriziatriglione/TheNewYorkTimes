@@ -7,6 +7,7 @@ import LittleNews from "../components/littleNews";
 import Error from "../../Error";
 import Loading from "../../Loading";
 
+// Food
 export default function FoodSection() {
   const [isLoading, setIsLoading] = useState(true)
   const [food, setFood] = useState("");
@@ -14,7 +15,6 @@ export default function FoodSection() {
   const apiKey = process.env.REACT_APP_NYT_API_KEY;
   const mode=useSelector((state) => state.newTheme);
   const {isNewTheme} = mode;
-
   const FoodData = async () => {
     try {
       const res = await axios.get(
@@ -27,26 +27,24 @@ export default function FoodSection() {
       setIsLoading(false)
     }
   };
-
   useEffect(() => {
     FoodData(); 
   },);
+
  return (
-    <Container>
+    <Container className="border-top">
          {isLoading ? (
         <Loading />
       ) : (
         <>
         <p className={`mt-3 ${isNewTheme ? "p.default" : "p_new"}`}>Food</p>
           {food.length > 0 ? (
-            
-            <LittleNews articles={food} />
+          <LittleNews articles={food} />
           ) : (
             error && <Error />
           )}
         </>
       )}
-          </Container>
-
-    );
+      </Container>
+      );
 }

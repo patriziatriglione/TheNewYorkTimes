@@ -46,18 +46,16 @@ const mode=useSelector((state) => state.newTheme);
           <OpinionSection />
           </Col>
           <Row className="py-2">
-          
-          <figure className="text-center">
+            <figure className="text-center">
   <blockquote className="blockquote">  
   <RiChatQuoteFill className={`m-2 ${isNewTheme ? "p.default" : "p_new"}`} />
   <p className={`${isNewTheme ? "p.default" : "p_new"}`}>With great power comes great responsibility.</p>
   </blockquote>
 </figure>
-          </Row>
-        </Row>
-
-      )}
-    </Container>
-  );
+</Row>
+</Row>
+)}
+</Container>
+);
 }
 

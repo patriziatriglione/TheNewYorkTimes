@@ -3,12 +3,11 @@ import {useSelector} from "react-redux";
 import {Row, Container} from "reactstrap";
 import "./../home.css"
 
+// structure with various articles and a photo in column Section II 
 export default function TitleColumnSectionII({articles}) {
-     
       const mode=useSelector((state) => state.newTheme);
       const {isNewTheme} = mode;
-    
-    const listNews= articles.slice(6, 12);
+      const listNews= articles.slice(6, 12);
     
      return (
     <Container>

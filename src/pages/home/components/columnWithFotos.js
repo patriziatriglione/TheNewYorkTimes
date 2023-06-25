@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import "./../home.css";
 import { Container, Row} from "reactstrap";
 
+// column structure with article and photo
 export default function ColumnFotos({article}) {
     const mode=useSelector((state) => state.newTheme);
     const {isNewTheme} = mode;

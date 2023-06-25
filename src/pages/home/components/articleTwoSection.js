@@ -3,10 +3,11 @@ import {useSelector} from "react-redux";
 import {Row, Container} from "reactstrap";
 import "./../home.css"
 
+// outline for an article with photos in section two
 export default function ArticleTwoSection({article}) {
- 
   const mode=useSelector((state) => state.newTheme);
   const {isNewTheme} = mode;
+  
  return (
 <Container>
         <Row className="my-3">

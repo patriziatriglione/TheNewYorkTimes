@@ -44,11 +44,8 @@ export default function SectionII() {
             <TraveldSection />
             </Col>
         </Row>
-        <Row>
-
-        </Row>
-    </>
-     )}
-     </Container>
-   );
- }
+        </>
+        )}
+        </Container>
+        );
+      }

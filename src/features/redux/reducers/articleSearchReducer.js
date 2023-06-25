@@ -1,5 +1,4 @@
 // articlesReducer.js
-
 import {
     SEARCH_ARTICLES_REQUEST,
     SEARCH_ARTICLES_SUCCESS,

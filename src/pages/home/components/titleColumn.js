@@ -3,8 +3,9 @@ import { useSelector } from "react-redux";
 import "./../home.css";
 import { Container, Row, Col } from "reactstrap";
 
+// structure with various articles and a photo in column
 export default function ColumnFourArticles({firstArticle, secondArticle, thirdArticle, fourthArticle}) {
-    const mode=useSelector((state) => state.newTheme);
+  const mode=useSelector((state) => state.newTheme);
     const {isNewTheme} = mode;
 
   return (

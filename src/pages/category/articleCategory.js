@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchData } from "../../features/redux/actions/articlesAction"; // Import the fetchData action
+import { fetchData } from "../../features/redux/actions/articlesAction"; 
 import { useParams } from "react-router-dom";
 import "./../home/home.css";
 import Loading from "../Loading";
@@ -12,7 +12,6 @@ export default function ArticleCategory() {
   const dispatch = useDispatch();
   // Access the articles state from Redux store
   const { articles, isLoading, error } = useSelector((state) => state.articleState); 
-
   const { section } = useParams();
   useEffect(() => {
     // Extract the section from the URL
@@ -22,8 +21,7 @@ export default function ArticleCategory() {
       dispatch(getArticlesSuccess([]));
     };
   }, [dispatch, section]);
- 
-
+  
   return (
     <div>
       {isLoading ? (

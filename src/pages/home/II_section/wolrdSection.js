@@ -6,15 +6,13 @@ import TitleColumnSectionII from "../components/titleColumnSectionII";
 import Error from "../../Error";
 import Loading from "../../Loading";
 
+// World
 export default function WorldSection() {
   const [isLoading, setIsLoading] = useState(true)
   const [world, setWorld] = useState("");
   const [error, setError] = useState(false);
-
   const apiKey = process.env.REACT_APP_NYT_API_KEY;
- 
-
-  const WorldData = async () => {
+    const WorldData = async () => {
     try {
       const res = await axios.get(
         `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${apiKey}`
@@ -26,10 +24,10 @@ export default function WorldSection() {
       setIsLoading(false)
     }
   };
-
   useEffect(() => {
     WorldData(); 
   },);
+
  return (
     <Container>
          {isLoading ? (
@@ -37,14 +35,12 @@ export default function WorldSection() {
       ) : (
         <>
           {world.length > 0 ? (
-            
-            <TitleColumnSectionII articles={world} />
+          <TitleColumnSectionII articles={world} />
           ) : (
             error && <Error />
           )}
         </>
       )}
-          </Container>
-
-    );
+      </Container>
+      );
 }

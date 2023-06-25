@@ -4,12 +4,13 @@ import {Row, Container} from "reactstrap";
 import Spiderman from "./../../../Images/spiderman.jpg";
 import "./../home.css"
 
+// Spiderman News
 export default function SpidermanSection() {
  
   const mode=useSelector((state) => state.newTheme);
   const {isNewTheme} = mode;
  return (
-<Container className={`text-center mt-4 ${isNewTheme ? "p.default" : "p_new"}`}>
+<Container className={`text-center mt-4 border-top ${isNewTheme ? "p.default" : "p_new"}`}>
         <Row className="my-3">
   <div className="my-3">
      <img
@@ -21,9 +22,7 @@ export default function SpidermanSection() {
               <div>
           <h4><strong>Who is Spider-Man?</strong></h4>
           </div>
-  
-
-    </Row>
-    </Container>
-    );
-}
+          </Row>
+          </Container>
+          );
+        }

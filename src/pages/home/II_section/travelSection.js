@@ -6,14 +6,12 @@ import ColumnTwoArticles from "../components/twoArticlesColumn";
 import Error from "../../Error";
 import Loading from "../../Loading";
 
+// travel
 export default function TraveldSection() {
   const [isLoading, setIsLoading] = useState(true)
   const [travel, setTravel] = useState("");
   const [error, setError] = useState(false);
-
   const apiKey = process.env.REACT_APP_NYT_API_KEY;
-  
-
   const TravelData = async () => {
     try {
       const res = await axios.get(
@@ -26,10 +24,10 @@ export default function TraveldSection() {
       setIsLoading(false)
     }
   };
-
   useEffect(() => {
     TravelData(); 
   },);
+
  return (
     <Container>
          {isLoading ? (
@@ -46,7 +44,6 @@ export default function TraveldSection() {
           )}
         </>
       )}
-          </Container>
-
-    );
-}
+      </Container>
+      );
+    }

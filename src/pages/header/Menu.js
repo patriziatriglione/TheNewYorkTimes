@@ -7,8 +7,7 @@ import "./menu.css"
 
 export default function Menu() {
       // status for opening/closing the menu
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleOffCanvas = () => {
+      const [isOpen, setIsOpen] = useState(false);const toggleOffCanvas = () => {
         setIsOpen(!isOpen);
     };
 

@@ -7,6 +7,7 @@ import LittleNews from "../components/littleNews";
 import Error from "../../Error";
 import Loading from "../../Loading";
 
+// Well
 export default function WellSection() {
   const [isLoading, setIsLoading] = useState(true)
   const [well, setWell] = useState("");
@@ -14,8 +15,7 @@ export default function WellSection() {
   const apiKey = process.env.REACT_APP_NYT_API_KEY;
   const mode=useSelector((state) => state.newTheme);
   const {isNewTheme} = mode;
-
-  const WellData = async () => {
+const WellData = async () => {
     try {
       const res = await axios.get(
         `https://api.nytimes.com/svc/topstories/v2/well.json?api-key=${apiKey}`
@@ -27,27 +27,25 @@ export default function WellSection() {
       setIsLoading(false)
     }
   };
-
   useEffect(() => {
     WellData(); 
   },);
+
  return (
-    <Container>
+    <Container className="border-top">
          {isLoading ? (
         <Loading />
       ) : (
         <>
         <p className={`mt-3 ${isNewTheme ? "p.default" : "p_new"}`}>Well</p>
           {well.length > 0 ? (
-            
-            <LittleNews articles={well} />
+          <LittleNews articles={well} />
           ) : (
             error && <Error />
           )}
         </>
       )}
-          </Container>
-
-    );
-}
+       </Container>
+       );
+      }
 

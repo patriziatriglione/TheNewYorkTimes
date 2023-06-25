@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Col, Row, Container } from "reactstrap";
 import "./../home.css";
 
+// structure two articles with two photos
 export default function TwoArticles({ firstArticle, secondArticle }) {
   const mode = useSelector((state) => state.newTheme);
   const { isNewTheme } = mode;

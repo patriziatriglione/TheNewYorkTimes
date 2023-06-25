@@ -10,8 +10,7 @@ import "./../home.css"
 
 export default function SectionII() {
   const dispatch = useDispatch();
-  const { articlesHome, isLoading } = useSelector((state) => state.articlesHome);
-console.log(articlesHome)
+  const {  isLoading } = useSelector((state) => state.articlesHome);
   useEffect(() => {
     dispatch(ArticlesHome());
   }, [dispatch]);

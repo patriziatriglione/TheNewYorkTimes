@@ -11,14 +11,12 @@ export const getArticlesRequestSent = () => {
     type: GET_ARTICLES_REQUEST_SENT,
   };
 };
-
 export const getArticlesSuccess = (articles) => {
   return {
     type: GET_ARTICLES_SUCCESS,
     payload: articles,
   };
 };
-
 export const getArticlesFailure = (errorMessage) => {
   return {
     type: GET_ARTICLES_FAILURE,

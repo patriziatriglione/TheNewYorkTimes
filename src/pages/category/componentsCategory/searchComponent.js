@@ -9,11 +9,10 @@ export default function SearchComponents({ articlesSearch }) {
   // state to change color
   const mode = useSelector((state) => state.newTheme);
   const { isNewTheme } = mode;
-
   
   return (
     <Container>
-       {Array.isArray(articlesSearch) && articlesSearch.map((article, index) => (
+      {Array.isArray(articlesSearch) && articlesSearch.map((article, index) => (
         <Row key={article.uri} className={`my-3 ${index !== articlesSearch.length - 1 ? " border-bottom" : ""}`}>
           <Col >
             {article && (
@@ -32,12 +31,11 @@ export default function SearchComponents({ articlesSearch }) {
             {article && article.multimedia && article.multimedia[2] && (
               <div>
               <img src={"https://www.nytimes.com/" + article.multimedia[2].url} alt={article.multimedia[0].caption} className="img-fluid my-2" />
-
               </div>
             )}
-          </Col>
-        </Row>
-      ))}
-    </Container>
-  );
-}
+            </Col>
+            </Row>
+            ))}
+            </Container>
+            );
+          }

@@ -6,8 +6,7 @@ import SectionIII from "./III_section/III_section";
 
 
 export default function Home() {
-  ;
-
+   
    return (
       <>
             <SectionI />

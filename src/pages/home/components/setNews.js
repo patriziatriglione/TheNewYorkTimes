@@ -3,8 +3,8 @@ import {useSelector} from "react-redux";
 import { Col, Row, Container} from "reactstrap";
 import "./../home.css"
 
+// structure with various articles and a photo
 export default function SetArticles({firstArticle, secondArticle, thirdArticle, fourthArticle}) {
- 
   const mode=useSelector((state) => state.newTheme);
   const {isNewTheme} = mode;
 

@@ -3,20 +3,18 @@ import {useSelector} from "react-redux";
 import { Col, Row, Container} from "reactstrap";
 import "./../home.css"
 
+// structure with various articles and a photo
 export default function SetArticlesII({article}) {
- 
   const mode=useSelector((state) => state.newTheme);
   const {isNewTheme} = mode;
-
-const firstArticle= article[0]; 
+  const firstArticle= article[0]; 
 const secondArticle= article[1]; 
 const thirdArticle= article[2]; 
 const fourthArticle= article[3]; 
 const fifththArticle= article[4]; 
 const sixthArticle= article[5]; 
 
-
- return (
+return (
 <Container>
     <Row className="sectionUs my-3">
             <Col>
