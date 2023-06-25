@@ -39,7 +39,7 @@ const mode=useSelector((state) => state.newTheme);
             <Article article={articlesHome[10]} />
             <TwoArticles firstArticle={articlesHome[11]} secondArticle={articlesHome[12]} />
           </Col>
-          <Col xs="3">
+          <Col xs="3" className="mobile">
           <ColumnFotos article={articlesHome[13]} />
           <ColumnTwoArticles firstArticle={articlesHome[14]} secondArticle={articlesHome[15]} />
           <ColumnFotos article={articlesHome[16]} />

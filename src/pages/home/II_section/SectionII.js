@@ -31,7 +31,7 @@ export default function SectionII() {
             fourthArticle= {articlesHome[20]}
           /> 
         </Col>
-        <Col xs="3">
+        <Col xs="3" className="mobile">
         <WorldSection />
         </Col>
         </Row>
@@ -40,7 +40,7 @@ export default function SectionII() {
             <Col md="9">
             <ArticleTwoSection article={articlesHome[21]} />
             </Col>
-            <Col xs="3">
+            <Col xs="3" className="mobile">
             <TraveldSection />
             </Col>
         </Row>
