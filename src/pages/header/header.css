@@ -1,0 +1,44 @@
+.title {
+    width:100%;
+    margin-bottom: 3%;
+}
+
+#newTheme {
+    display: flex;
+    justify-content: center;
+}
+
+#newTheme .checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+#newTheme .label {
+    width: 43px;
+    height: 25px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    position: relative;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#newTheme .ball {
+    width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+#newTheme .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+

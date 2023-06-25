@@ -1,0 +1,46 @@
+.home {
+    background-color: white;
+    color:black;
+    margin: 1% 13%;;
+}
+
+.home_new {
+    background-color: black;
+    color: white;
+    margin: 1% 13%;;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.a_default {
+    color:black!important;
+    text-decoration: none!important;
+}
+.a_default:hover {
+    background-color: rgb(242, 242, 255);
+}
+
+.a_new {
+    color:rgb(255, 255, 255)!important;
+    text-decoration: none!important;
+}
+
+.a_new:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+.p_default {
+    color:black;
+}
+
+.p_new {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile {
+        display: none;
+    }
+}
