@@ -27,6 +27,45 @@ For this project <b>React, Redux</b> and <b>Axios</b> were used for calls.
 
 For the graphic part, I used <b>Bootstrap</b> and <b>Reactstrap</b>.
 
+#### Istructions
+The site looks like this:
+
+- In the first part we have the header composed of:
+- Side menu icon,
+- Search bar,
+- Title,
+- Works to change theme,
+- Login icon
+
+- Below them we find a menu with some categories and, finally, begins the central part of the site made up of various articles.
+
+![header](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/header-home.png)
+
+- While the first themed mode consists of white, red and black, the dark mode consists of black, white and gray
+
+![darkTheme](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/dark_theme.png)
+
+- The home is composed of various articles in different positions, where it is possible, through a click, to be taken to the article page
+
+![home](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/home.png)
+
+- Through the various menus or the search bar, we are taken to a list of articles based on the chosen category/word
+
+![article](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/article.png)
+
+- On the Login page we have a form and buttons where you can log in or create an account with various social networks.
+- Being on a clone site, I preferred to add a notice that leads to the real site.
+![login](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/login.png)
+![loginWarning](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/login_warning.png?raw=true)
+
+- by clicking on the menu icon, we have a list of various categories to choose from.
+![menu](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/menu.png?raw=true)
+
+#### Example 
+![example](https://github.com/patriziatriglione/TheNewYorkTimes/blob/main/screen/example.gif?raw=true)
+
+#### API
+I used The New York Times API to search for articles (https://developer.nytimes.com/apis).
 
 #### Badges
 <h3 align="left">Connect with me:</h3>
